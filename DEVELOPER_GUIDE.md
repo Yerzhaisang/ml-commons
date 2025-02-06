@@ -74,14 +74,6 @@ You can install Opensearch multiple ways:
 1. https://opensearch.org/downloads.html#docker-compose
 2. https://opensearch.org/docs/2.5/install-and-configure/install-opensearch/tar/
 
-#### Default setup for opensearch
-
-```yml
-opensearch.hosts: ["https://localhost:9200"]
-opensearch.username: "admin" # Default username
-opensearch.password: "admin" # Default password
-```
-
 ### Build
 
 This package uses the [Gradle](https://docs.gradle.org/current/userguide/userguide.html) build system. Gradle comes with excellent documentation that should be your first stop when trying to figure out how to operate or modify the build. we also use the OpenSearch build tools for Gradle. These tools are idiosyncratic and don't always follow the conventions and instructions for building regular Java code using Gradle. Not everything in this package will work the way it's described in the Gradle documentation. If you encounter such a situation, the OpenSearch build tools [source code](https://github.com/opensearch-project/OpenSearch/tree/main/buildSrc/src/main/groovy/org/opensearch/gradle) is your best bet for figuring out what's going on.
